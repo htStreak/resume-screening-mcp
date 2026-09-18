@@ -1,0 +1,73 @@
+{
+  "serviceName": "简历初筛MCP",
+  "description": "为简历初筛执行器提供岗位JD解析、简历结构化、岗位匹配度计算、可信度检测、综合评分、候选人排序和中文报告生成能力。Agent负责对话、文件接收和流程调度，MCP负责稳定的规则计算和结构化输出，避免仅依赖提示词进行打分和排序。",
+  "recommendedInstallMethod": "npx",
+  "npxPublishedPackage": {
+    "mcpServers": {
+      "resume-screening-mcp": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "resume-screening-mcp"
+        ],
+        "env": {}
+      }
+    }
+  },
+  "npxGitHubPackage": {
+    "mcpServers": {
+      "resume-screening-mcp": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "github:你的用户名/resume-screening-mcp"
+        ],
+        "env": {}
+      }
+    }
+  },
+  "uvxNotRecommended": {
+    "note": "当前项目是 Node.js MCP，不是 Python 包，不建议选择 uvx。除非后续重写为 Python 包。",
+    "mcpServers": {
+      "resume-screening-mcp": {
+        "command": "uvx",
+        "args": [
+          "resume-screening-mcp"
+        ],
+        "env": {}
+      }
+    }
+  },
+  "sseNotRecommendedUntilDeployed": {
+    "note": "只有部署成远程 SSE MCP 服务后才使用。",
+    "mcpServers": {
+      "resume-screening-mcp": {
+        "url": "https://你的域名/sse",
+        "env": {}
+      }
+    }
+  },
+  "streamableHttpNotRecommendedUntilDeployed": {
+    "note": "只有部署成远程 Streamable HTTP MCP 服务后才使用。",
+    "mcpServers": {
+      "resume-screening-mcp": {
+        "url": "https://你的域名/mcp",
+        "env": {}
+      }
+    }
+  },
+  "componentLibraryNotRecommended": {
+    "note": "组件库适合平台内置组件，不适合当前自定义简历筛选 MCP。"
+  },
+  "localNodeTest": {
+    "mcpServers": {
+      "resume-screening-mcp": {
+        "command": "node",
+        "args": [
+          "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-18\\ge-m\\outputs\\resume-screening-mcp\\src\\index.js"
+        ],
+        "env": {}
+      }
+    }
+  }
+}
