@@ -1,7 +1,7 @@
 {
-  "name": "resume-screening-mcp",
+  "name": "@htstreak/resume-screening-mcp",
   "version": "0.1.0",
-  "description": "MCP tools for resume parsing, JD matching, trust checking, scoring, ranking, and report generation.",
+  "description": "MCP service for resume screening, JD matching, trust checking, scoring and candidate ranking.",
   "type": "module",
   "bin": {
     "resume-screening-mcp": "./index.js"
